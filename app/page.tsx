@@ -1,5 +1,5 @@
 import { Button } from '@fluentui/react-components';
 
 export default function Home() {
-  return <Button>Hello everyone</Button>;
+  return <Button>Test everyone</Button>;
 }
