@@ -3,6 +3,7 @@
 import * as React from 'react';
 import {
     FluentProvider,
+    teamsLightTheme,
     SSRProvider,
     RendererProvider,
     createDOMRenderer,
@@ -25,7 +26,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
     return (
         <RendererProvider renderer={renderer}>
             <SSRProvider>
-                <FluentProvider>{children}</FluentProvider>
+                <FluentProvider theme={teamsLightTheme}>{children}</FluentProvider>
             </SSRProvider>
         </RendererProvider>
     );
